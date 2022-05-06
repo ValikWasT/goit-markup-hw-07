@@ -1,0 +1,113 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+}
+
+.header .container,
+.nav-list,
+.feedback-list {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-list {
+    margin-left: auto;
+}
+
+.nav-list__item:not(:last-child),
+.feedback-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.header__logo--addon {
+    color: #000000;
+}
+
+.nav-list__link,
+.feedback-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-list__link {
+    color: inherit;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list__link--accent,
+.nav-list__link:hover,
+.nav-list__link:focus {
+    color: var(--accent);
+}
+
+.nav-list__item {
+    position: relative;
+}
+
+.nav-list__link--accent::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 47px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent);
+}
+
+.feedback-list__link {
+    color: var(--secont-text);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-list__link:hover,
+.feedback-list__link:focus {
+    color: var(--accent);
+}
+
+.feedback-list__item {
+    display: flex;
+    align-items: center;
+}
+
+.mail-icon,
+.phone-icon {
+    margin-right: 10px;
+    fill: var(--secont-text);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-list__link:hover .mail-icon,
+.feedback-list__link:focus .mail-icon,
+.feedback-list__link:hover .phone-icon,
+.feedback-list__link:focus .phone-icon {
+    fill: var(--accent);
+}
