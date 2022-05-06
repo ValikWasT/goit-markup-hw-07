@@ -51,6 +51,10 @@
 
 .worker-soc__link {
     background-color: #ffffff;
+    &:hover,
+        &:focus {
+            background-color: var(--accent);
+        }
 }
 
 .footer-soc-list__link {
@@ -75,14 +79,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .worker-soc__link:hover &,
+        .worker-soc__link:focus & {
+            fill: #ffffff;
+        }
 }
 
-.worker-soc__link:hover,
-.worker-soc__link:focus {
-    background-color: var(--accent);
-}
 
-.worker-soc__link:hover .worker-soc__icon,
-.worker-soc__link:focus .worker-soc__icon {
-    fill: #ffffff;
-}
+
